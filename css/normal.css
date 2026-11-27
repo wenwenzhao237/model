@@ -3,10 +3,18 @@
 **************************/
 
 @font-face {
-  font-family: "Comic Relief";
+  font-family: "Playfair Display, Comic Relief";
   src: url(../fonts/ComicRelief-Regular.woff2);
   font-weight: 400;
   font-style: normal;
+}
+
+h1 {
+  font-family: "Playfair Display, Comic Relief";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 /**************************
@@ -15,6 +23,7 @@
 
 html {
   color-scheme: light dark;
+  background-color: #9a9a9a;
 }
 
 /**************************
@@ -35,27 +44,52 @@ body {
   font-family: "Comic Relief", system-ui;
 }
 
-/**************************
-* MARK: Header
-**************************/
-
 header {
 }
 
-/**************************
-* MARK: Footer
-**************************/
-
-footer {
+.nail-collage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 60px;
 }
 
-/**************************
-* MARK: Main
-**************************/
+.photo {
+  width: 220px;
+  height: 280px;
+  background-color: #eaccd8;
+  border: 8px solid white;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.4s ease;
+}
+
+.photo-one {
+  transform: rotate(-8deg);
+}
+
+.photo-two {
+  transform: rotate(3deg);
+}
+
+.photo-three {
+  transform: rotate(9deg);
+}
+
+.photo:hover {
+  transform: rotate(0deg) scale(1.05);
+}
 
 main {
 }
 
 /**************************
-* MARK: Section ...
+* MARK: Lijstjes
 **************************/
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
